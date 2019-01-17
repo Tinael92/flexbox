@@ -1,0 +1,182 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+* {
+    box-sizing: border-box;
+}
+.calendar {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+    align-content: flex-start;
+    min-width: 700px;
+}
+.calendarTop {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap row;
+    height: 10vh;
+}
+.calendarRight {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: wrap row;
+    position: relative;
+    height: 100%;
+}
+.calendarRight_wrap {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: wrap row;
+    position: relative;
+    height: 80vh;
+}
+.calendarLeft {
+    width: 10%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.timeScale {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 88vh;
+    padding-top: 10vh;
+    width: 100%;
+}
+.long_1 {
+    height: 10.5%;
+}
+.long_2 {
+    height: 21.6%;
+}
+.long_3 {
+    height: 32.7%;
+}
+.long_4 {
+    height: 43.8%;
+}
+.long_5 {
+    height: 54.9%;
+}
+.long_6 {
+    height: 66%;
+}
+.long_7 {
+    height: 77.1%;
+}
+.long_8 {
+    height: 88.2%;
+}
+.long_9 {
+    height: 100%;
+}
+.calendarScale {
+    height: 70vh;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+}
+.calendarTasks {
+    height: 70vh;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #cdcdcd;
+}
+.calendarScale_cell {
+    height: 11.111%;
+    width: 14.285%;
+    box-shadow: inset 1px 1px 0px 0px #cdcdcd;
+}
+.calendarTasks_task {
+    width: 12.285%;
+    margin-right: 1.5%;
+    margin-left: .5%;
+    min-height: 11%;
+    background: #7986CC;
+    border-radius: 4px;
+    margin-bottom: 0.111%;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 3px;
+    padding-top: 1px;
+}
+.calendarTasks_task__name {
+    font-weight: bold;
+    padding-bottom: 1px;
+}
+.timeScale_hour {
+    height: 6.002476%;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    font-size: 12px;
+    color: #8f8f8f;
+    position: relative;
+}
+.timeScale_hour:after {
+    content: '';
+    display:block;
+    height: 1px;
+    background: #cdcdcd;
+    width: 8px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: 0px;
+}
+.timeScale_hour:last-child:after {
+    margin-top: -1px;
+}
+.calendarDate {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.calendarDate_weekDay {
+    font-size: 14px;
+}
+.calendarDate_dayNumber {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+@media (max-width: 800px) {
+    .calendarRight {
+        width: 90%;
+    }
+    .calendarRight_wrap  {
+        width: 95%;
+    }
+}
